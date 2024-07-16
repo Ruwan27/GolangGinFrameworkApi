@@ -28,7 +28,7 @@ func getUrlData(ctx *gin.Context) {
 	})
 	
  }
- //Gin framework api get, post, url param and query string
+ 
 // hrrp://localhost:8080/getQueryString?name=Mark&age=30
 func getQueryString(ctx *gin.Context) {
 	name:=ctx.Query(("name"))
