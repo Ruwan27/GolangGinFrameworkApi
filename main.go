@@ -22,7 +22,7 @@ func getUrlData(ctx *gin.Context) {
 	name:=ctx.Param(("name"))
 	age:=ctx.Param("age")
 	ctx.JSON(200,gin.H{
-		"data":"Hi I am gin framework",
+		"data":"Hi I am gin framework url data",
 		"name":name,
 		"age":age,
 	})
@@ -34,7 +34,7 @@ func getQueryString(ctx *gin.Context) {
 	name:=ctx.Query(("name"))
 	age:=ctx.Query("age")
 	ctx.JSON(200,gin.H{
-		"data":"Hi I am gin framework",
+		"data":"Hi I am gin framework query string",
 		"name":name,
 		"age":age,
 	})
@@ -42,7 +42,7 @@ func getQueryString(ctx *gin.Context) {
  }
 func getData(ctx *gin.Context) {
 	ctx.JSON(200,gin.H{
-		"data":"Hi I am gin framework", 
+		"data":"Hi I am gin framework get method", 
 	})
 	
  }
